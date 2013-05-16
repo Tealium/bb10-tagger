@@ -20,9 +20,9 @@
 
 #define TAG "TEALIUM BB10 TAGGER"
 #define CDN_ROOT "http://tags.tiqcdn.com/utag/"
-#define LOGGER_LEVEL 3 // 0 - no messages, 1 - information, 2 - troubleshooting, 3 - everything
-#define SEND_TIME_MIN 5000
-#define SEND_TIME_VAR 200
+#define LOGGER_LEVEL 0 // 0 - no messages, 1 - information, 2 - troubleshooting, 3 - everything
+#define SEND_TIME_MIN 100
+#define SEND_TIME_VAR 100
 #define SEND_QUEUE_FILE "data/cache/tealium_request_queue.json"
 
 TealiumTagger::TealiumTagger(bb::cascades::Application* app, QString account, QString profile, QString environment){
