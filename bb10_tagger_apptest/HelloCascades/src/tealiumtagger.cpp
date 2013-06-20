@@ -65,10 +65,11 @@ void TealiumTagger::init(bb::cascades::Application* app, QString account, QStrin
 
 void TealiumTagger::setDeviceInfo(){
 	bb::platform::PlatformInfo platformInfo;
-	variablesBase.insert("platform_os", platformInfo.osVersion());
+	variablesBase.insert("os_version", platformInfo.osVersion());
+
 
 	bb::ApplicationInfo applicationInfo;
-	variablesBase.insert("app_title", applicationInfo.title());
+	variablesBase.insert("app_name", applicationInfo.title());
 	variablesBase.insert("app_version", applicationInfo.version());
 
 	bb::PackageInfo packageInfo;
@@ -76,6 +77,10 @@ void TealiumTagger::setDeviceInfo(){
 	variablesBase.insert("pkg_version", packageInfo.version());
 	variablesBase.insert("pkg_author", packageInfo.author());
 	variablesBase.insert("platform", "bb10");
+
+	// composite data sources
+	variablesBase.insert("app_id", applicationInfo.title() + " " + applicationInfo.version());
+	variablesBase.insert("platform+version", "bb10" + " " + platformInfo.osVersion);
 }
 
 void TealiumTagger::initializeWebView(){
