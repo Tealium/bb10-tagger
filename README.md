@@ -118,17 +118,17 @@ Default Data Sources
 ====================
 The following key variables are available from the BB10 Library with each dispatch and simply need to be mapped to your analytic tag of choice within your Tealium IQ panel:
 
-- app_id            A composite of app_name & app_version (ie myApp 1.0)
-- app_name          Name of app
-- app_version       Your app version number
-- link_id           String value id from trackItemClicked's first argument
-- os_version        Version of the OS (ie 10.1.0)
-- screen_title      Page/View name
+- app_id            (A composite of app_name & app_version (ie myApp 1.0))
+- app_name          (Name of app)
+- app_version       (Your app version number)
+- link_id           (String value id from trackItemClicked's first argument)
+- os_version        (Version of the OS (ie 10.1.0))
+- screen_title      (Page/View name)
 - pkg_author
 - pkg_name
 - pkg_version
-- platform          Platform (ie bb10)
-- platform+version  Composite of platform+os_version (bb10 10.1)
+- platform          (Platform (ie bb10))
+- platform+version  (Composite of platform+os_version (bb10 10.1))
 
 
 Troubleshooting
