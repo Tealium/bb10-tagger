@@ -142,5 +142,5 @@ SOLUTION: There is an issue with Momentics 10.1.0 where an fprintf() statment wi
 Support
 -------
 
-For additional help and support, please send all inquires to mobile_support@tealium.com
+For additional help and support, please send all inquires to your account manager.
 
